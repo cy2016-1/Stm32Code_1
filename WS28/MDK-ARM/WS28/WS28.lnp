@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"ws28\startup_stm32f103xb.o"
+"ws28\main.o"
+"ws28\stm32f1xx_it.o"
+"ws28\stm32f1xx_hal_msp.o"
+"ws28\stm32f1xx_hal_gpio_ex.o"
+"ws28\stm32f1xx_hal_tim.o"
+"ws28\stm32f1xx_hal_tim_ex.o"
+"ws28\stm32f1xx_hal.o"
+"ws28\stm32f1xx_hal_rcc.o"
+"ws28\stm32f1xx_hal_rcc_ex.o"
+"ws28\stm32f1xx_hal_gpio.o"
+"ws28\stm32f1xx_hal_dma.o"
+"ws28\stm32f1xx_hal_cortex.o"
+"ws28\stm32f1xx_hal_pwr.o"
+"ws28\stm32f1xx_hal_flash.o"
+"ws28\stm32f1xx_hal_flash_ex.o"
+"ws28\stm32f1xx_hal_exti.o"
+"ws28\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "WS28\WS28.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WS28.map" -o WS28\WS28.axf
